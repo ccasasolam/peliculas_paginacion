@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <h1>Lista de películas</h1>
+    <div id="movies-list">
+
+    </div>
+    <button id="next">Next</button>
+    <script>
+
+        //Definir variables para controlar paginación
+
+        let obtenerDatos = () => {
+            // Endpoint URL
+            const endpoint = 'http://localhost:....php';
+
+            const url = endpoint + "?start=" + start + "&limit=" + limit;
+            // Uso de fetch para obtener los datos
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return ;
+                })
+                .then( => {
+                    // Usar los datos para mostrarlos en la pagina
+                    
+                })
+                .catch(error => {
+                    console.error('Fetch error:', error);
+                });
+        };
+
+        let mostrarDatos = (data) => {
+            
+            var div = document.getElementById("movies-list");
+            div.innerHTML = contenido;
+        }
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            obtenerDatos();
+            //agregar botones y/o event listener para los botones
+        });
+    </script>
+</body>
+
+</html>
