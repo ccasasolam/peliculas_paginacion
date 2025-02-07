@@ -23,3 +23,5 @@ INSERT INTO pelicula (id, nombre, genero, director, anio, imagen) VALUES (4, 'Th
 INSERT INTO pelicula (id, nombre, genero, director, anio, imagen) VALUES (5, 'Fight Club', 'Drama', 'David Fincher', 1999, 'https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg');
 INSERT INTO pelicula (id, nombre, genero, director, anio, imagen) VALUES (6, 'Se7en', 'Cop Drama', 'David Fincher', 1995, 'https://m.media-amazon.com/images/M/MV5BY2IzNzMxZjctZjUxZi00YzAxLTk3ZjMtODFjODdhMDU5NDM1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg');
 
+
+UPDATE pelicula SET imagen = 'https://m.media-amazon.com/images/M/MV5BMjQ5MzQxZTEtMmE1Yy00NjZlLTk5ODItNjI3MWIxMjk1M2U5XkEyXkFqcGc@._V1_.jpg' WHERE id = 2;
